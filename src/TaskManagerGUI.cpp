@@ -20,5 +20,18 @@ void TaskManagerGUI::addTask() {
 
 	if (name.isEmpty()) return;
 
+	QString task = name + " | " + priority + " | " + date.toString("dd/MM/yyyy");
+	ui->taskListWidget->addItem(task);
+
+	ui->taskNameEdit->clear();
+	ui->priorityComboBox->setCurrentIndex(0);
+	ui->dueDateEdit->setDate(QDate::currentDate());
+}
+
+void TaskManagerGUI::removeSelectedTask() {
+	QListWidgetItem* item = ui->taskListWidget->currentItem();
+	if (item) {
+		delete item;
+	}
 }
 
