@@ -1,4 +1,4 @@
-#include "TaskManagerGUI.h"
+#include "../include/TaskManagerGUI.h"
 #include <QtWidgets/QApplication>
 
 int main(int argc, char *argv[])

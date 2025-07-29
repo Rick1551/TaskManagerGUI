@@ -11,7 +11,11 @@ public:
     TaskManagerGUI(QWidget *parent = nullptr);
     ~TaskManagerGUI();
 
+private slots:
+	void addTask();
+	void removeSelectedTask();
+
 private:
-    Ui::TaskManagerGUIClass ui;
+    Ui::TaskManagerGUI *ui;
 };
 
