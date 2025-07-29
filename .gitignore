@@ -1,0 +1,35 @@
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.cache
+*.log
+*.pdb
+*.obj
+*.ipch
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.tlog
+*.idb
+*.class
+
+# Qt generated files
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+
+# Build folders
+build/
+debug/
+release/
+x64/
+x86/
+
+# CMake (if used)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
